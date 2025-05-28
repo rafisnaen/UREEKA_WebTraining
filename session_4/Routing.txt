@@ -1,0 +1,40 @@
+Routing
+router : src \ app
+-> file-system based
+-> router dipakai untuk dipakai multiple pages
+
+pages : api
+
+Kalau untuk redirect dari page ke page lain :
+- href untuk html
+-> next link untuk next.js
+-> bisa use router
+
+client side rendering vs server side rendering
+
+client side rendering :
+-> diberatkan ke browsernya client
+-> faster web
+-> smaller server load
+-> great utk dynamic updates
+-> Kenapa ? karna rendering di beratkan ke client semua
+
+server side rendering :
+-> server mengambil ambil portion bobot yang ada pada client side
+-> server sudah menyediakan pre-render, tapi belum fully render (static, tidak interaktif)
+
++ selalu cd Ketika npm run dev
+
+declare "use client" untuk nentuin csr.
+*selalu deklarasi di paling atas
+-> semua react component adalah client side
+
+shadcn/ui 
+-> prebuilt component
+https://ui.shadcn.com/
+
+aceternity
+-> component dari shadcn/ui
+https://ui.aceternity.com/
+
+C:\File_bebas\Project\UREEKA
