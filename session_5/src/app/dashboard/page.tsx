@@ -1,18 +1,12 @@
-import { getServerSession } from "next-auth";
-import { redirect } from "next/navigation";
+"use client";
+import { SignedIn } from "@clerk/nextjs";
 
-const DashboardPage = async () => {
-  const session = await getServerSession();
-
-  if (!session) {
-    redirect("/auth/signin");
-  }
-
+export default function DashboardPage() {
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <p>Welcome, {session.user?.name || "User"}!</p>
-      <p>Email: {session.user?.email}</p>
-    </div>
+    <SignedIn>
+      <div style={{ textAlign: "center", marginTop: "50px" }}>
+        <h1>Selamat Datang di Dashboard !</h1>
+      </div>
+    </SignedIn>
   );
-};
+}
