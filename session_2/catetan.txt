@@ -1,0 +1,11 @@
+<span> misahin elemen buat dicustom, tapi ga ngebuat baris baru
+pt, px, pr, pl : padding
+<> <\> : untuk memakai komponen html lebih dari 1 
+
+Proses download klik button :
+buat link → taruh di halaman → klik otomatis → buang link
+Jadi :
+buat dulu link buat downloadnya di page
+lalu taruh linknya ke page
+action trigger button -> linknya ketrigger
+buang link downloadnya
